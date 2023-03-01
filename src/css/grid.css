@@ -82,6 +82,10 @@ BOARD
     border-radius: 1em;
 }
 
+#completion-check {
+    /* display: none; TODO: Uncomment */
+}
+
 /****
 
 COMPLETION
@@ -102,7 +106,7 @@ COMPLETION
     min-height: 360px;
     top: -100vh;
 
-    background-color: beige;
+    background-color: #2b645c;
     transition: all 0.5s ease;
 
     left: 50%;
