@@ -50,7 +50,16 @@ export default function SubmitBoard() {
         if (response.ok) {
             navigate("/")
         } else {
-            // TODO: Add functionality
+            console.log(response)
+            switch (response.status) {
+                case 400:
+                    console.log("400")
+                    break
+                case 500:
+                default:
+                    console.log("500")
+                    break
+            }
         }
     }
 
