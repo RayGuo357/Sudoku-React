@@ -1,16 +1,8 @@
-import React, { useState } from "react";
-
 import "../css/grid.css"
 
 export function Cell(props) {
 
     const { num, coord, immutable, handleClick, id, isSelected, styling, isWrong } = props;
-
-    // const [cell, setCell] = useState({
-    //     num: num,
-    //     coord: { x: coord.x, y: coord.y },
-    //     immutable: immutable
-    // });
 
     function getStyling() {
         let newStyling = {...styling}
