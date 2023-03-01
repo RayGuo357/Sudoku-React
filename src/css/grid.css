@@ -48,6 +48,10 @@ BOARD
     }
 }
 
+.board-info {
+    font-size: small;
+}
+
 .selected {
     background-color: #4f9ae7;
     transition: 0.5s;
@@ -244,6 +248,7 @@ label #uncheck {
 #title {
     transition: all 0.6s ease;
     color: white;
+    font-size: larger;
 }
 
 .menu>div {
