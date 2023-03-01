@@ -1,0 +1,276 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    transition: all 0.6s ease;
+    margin-top: 2%;
+}
+
+/****
+
+BOARD
+
+****/
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    max-width: 700px;
+    width: 100%;
+    min-width: 200px;
+    margin: auto;
+    transition: all 0.6s ease;
+}
+
+.board-cell {
+    display: flex;
+    width: auto;
+    border-style: solid;
+    border-width: thin;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 426px) {
+    .board-cell {
+        min-height: 40.359px;
+        min-width: 35px;
+    }
+}
+
+@media (min-width: 426px) {
+    .board-cell {
+        min-height: 75.344px;
+        min-width: 75.344px;
+    }
+}
+
+.selected {
+    background-color: #4f9ae7;
+    transition: 0.5s;
+}
+
+[tabindex] {
+    outline: none;
+}
+
+.number-container {
+    max-width: 700px;
+    width: 100%;
+    min-width: 200px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.number-container > div {
+    margin: 5px;
+    background-color: #80808080;
+    border-radius: 1em;
+}
+
+.number-container > div:hover {
+    margin: 4px;
+    background-color: white;
+    border: 1px solid #80808080;
+    border-radius: 1em;
+}
+
+/****
+
+COMPLETION
+
+****/
+
+#completion {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    max-width: 700px;
+    width: 100%;
+    min-width: 360px;
+    min-height: 360px;
+    top: -100vh;
+
+    background-color: beige;
+    transition: all 0.5s ease;
+
+    left: 50%;
+    margin-left: -350px;
+    border-radius: 5em;
+}
+
+#back-completion {
+    position: absolute;
+    background-color: rgb(0 0 0 / 50%);
+    height: 100vh;
+    width: 100vw;
+    left: 0px;
+    top: -100vh;
+}
+
+#completion-check:checked~#completion-container #back-completion #completion {
+    margin-top: -192.5px;
+    top: 48%;
+}
+
+#completion-check:checked~#completion-container #back-completion {
+    top: 0px;
+}
+
+@media (min-width: 1300px) {
+    #completion {
+        min-width: 700px;
+        min-height: 700px;
+        top: -100vh;
+        left: 50%;
+        margin-left: -350px;
+    }
+
+    #completion-check:checked~#completion-container #back-completion #completion {
+        margin-top: -350px;
+        top: 48%;
+    }
+}
+
+@media (max-width: 420px) {
+    #completion {
+        width: 360px;
+        height: 360px;
+        top: -100vh;
+        left: 50%;
+        margin-left: -180px;
+    }
+
+    #completion-check:checked~#completion-container #back-completion #completion {
+        margin-top: -180px;
+        top: 50%;
+    }
+}
+
+/****
+
+NAVBAR
+
+****/
+
+#nav-container {
+    background-color: #002c44d4;
+}
+
+.nav {
+    max-width: 700px;
+    width: 100%;
+    min-width: 200px;
+    margin: auto;
+    min-height: 5vh;
+    z-index: 111;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    position: absolute;
+    background-color: #002c44;
+    width: 100vw;
+    height: 100vh;
+    left: -100vw;
+    top: 0;
+    line-height: 65px;
+    transition: all 0.5s ease;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+    border-bottom: 1px solid white;
+}
+
+a:hover {
+    font-size: larger;
+    transition: 0.4s
+}
+
+#menu-check {
+    display: none;
+}
+
+#menu-check:checked~div .nav .menu {
+    left: 0;
+}
+
+#menu-check:checked~label #uncheck {
+    left: 90vw;
+}
+
+label #check,
+label #uncheck {
+    position: absolute;
+    transition: all 0.5s ease;
+    color: white;
+    top: 1vh;
+}
+
+label #check:hover,
+label #uncheck:hover {
+    border: 1px solid white;
+    border-radius: 0.4em;
+}
+
+label #check {
+    left: 3vw;
+}
+
+label #uncheck {
+    left: -100vw;
+    z-index: 1111;
+}
+
+#title {
+    transition: all 0.6s ease;
+    color: white;
+}
+
+.menu>div {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+    min-width: 200px;
+    margin: auto
+}
+
+@media (min-width: 1300px) {
+    .menu {
+        width: 300px;
+    }
+
+    #menu-check:checked~label #uncheck {
+        left: 250px;
+    }
+
+    #menu-check:checked~.container {
+        padding-left: 300px;
+    }
+
+    #menu-check:checked~div .nav #title {
+        padding-left: 300px;
+    }
+}
+
+/****
+
+API & ABOUT
+
+****/
