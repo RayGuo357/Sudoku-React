@@ -11,7 +11,7 @@ export function Cell(props) {
         if (immutable) newStyling = { ...newStyling, ...{ fontWeight: 'bold' } }
         if (coord.y === 2 || coord.y === 5) newStyling = { ...newStyling, ...{ borderRight: '3px solid' } }
         if (coord.x === 2 || coord.x === 5) newStyling = { ...newStyling, ...{ borderBottom: '3px solid' } }
-        if (isWrong) newStyling = { ...newStyling, ...{ backgroundColor: 'red' } }
+        if (isWrong) newStyling = { ...newStyling, ...{ backgroundColor: '#dd4848' } }
 
         return newStyling
     }
