@@ -160,8 +160,12 @@ NAVBAR
 
 ****/
 
+.active {
+    background-color: #2b5064;
+}
+
 #nav-container {
-    background-color: #002c44d4;
+    background-color: #2b5064;
 }
 
 .nav {
