@@ -50,10 +50,11 @@ export default function SubmitBoard() {
         if (response.ok) {
             navigate("/")
         } else {
-            console.log(response)
+            // TODO: Notification
             switch (response.status) {
                 case 400:
-                    console.log("400")
+                    response = await response.json()
+                    console.log("400", response.msg)
                     break
                 case 500:
                 default:
