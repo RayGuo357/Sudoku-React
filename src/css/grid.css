@@ -122,6 +122,7 @@ COMPLETION
     width: 100vw;
     left: 0px;
     top: -100vh;
+    z-index: 1112;
 }
 
 #completion-check:checked~#completion-container #back-completion #completion {
