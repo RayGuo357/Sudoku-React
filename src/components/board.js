@@ -48,7 +48,7 @@ export default function Board(props) {
     useEffect(() => {
         async function fetchBoard() {
             if (type === "DAILY") {
-                const response = await fetch('http://192.168.0.23:8000/api/getDaily/')
+                const response = await fetch('http://192.168.0.23:8000/api/daily/')
 
                 const record = await response.json()
 
@@ -63,7 +63,7 @@ export default function Board(props) {
                     gameState: "RUNNING"
                 })
             } else if (type === "RANDOM") {
-                const response = await fetch('http://192.168.0.23:8000/api/getRandom/')
+                const response = await fetch('http://192.168.0.23:8000/api/random/')
 
                 const record = await response.json()
 
@@ -214,7 +214,7 @@ export default function Board(props) {
     }
 
     let generateNewRandomBoard = async () => {
-        const response = await fetch('http://192.168.0.23:8000/api/getRandom/')
+        const response = await fetch('http://192.168.0.23:8000/api/random/')
 
         const record = await response.json()
 

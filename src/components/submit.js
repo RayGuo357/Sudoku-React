@@ -39,7 +39,7 @@ export default function SubmitBoard() {
             difficulty: form.difficulty
         }
 
-        let response = await fetch("http://localhost:8000/api/postBoard", {
+        let response = await fetch("http://localhost:8000/api/submit", {
             method: "POST",
             body: JSON.stringify(submission),
             headers: {
