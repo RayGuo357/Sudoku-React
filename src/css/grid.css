@@ -215,7 +215,7 @@ NAVBAR
 
 .menu {
     display: flex;
-    position: absolute;
+    position: fixed;
     background-color: #002c44;
     width: 100vw;
     height: 100vh;
@@ -271,6 +271,7 @@ label #check {
 label #uncheck {
     left: -100vw;
     z-index: 1111;
+    position: fixed;
 }
 
 #title {
