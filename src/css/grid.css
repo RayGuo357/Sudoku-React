@@ -312,21 +312,9 @@ API & ABOUT
 
 ****/
 
-pre code {
-    background-color: #eee;
-    border: 1px solid #999;
-    display: block;
-    padding: 20px;
-}
-
-@media (max-width: 420px) {
-    pre code {
-        background-color: #eee;
-        border: 1px solid #999;
-        display: block;
-        font-size: 11px;
-        padding: 20px;
-    }
+.api {
+    text-align: left;
+    margin: 30px;
 }
 
 hr {
