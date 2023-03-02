@@ -13,7 +13,7 @@ export default function Api() {
 
     let all_req =
         `curl --request GET \\
-    --url ${process.env.API_LINK === undefined ? "{Missing Link}" : process.env.API_LINK}/api/all`
+    --url ${process.env.REACT_APP_API_LINK === undefined ? "{Missing Link}" : process.env.REACT_APP_API_LINK}/api/all`
 
     let all_res =
         `[
@@ -52,7 +52,7 @@ export default function Api() {
 
     let random_req =
         `curl --request GET \\
-    --url ${process.env.API_LINK === undefined ? "{Missing Link}" : process.env.API_LINK}/api/random`
+    --url ${process.env.REACT_APP_API_LINK === undefined ? "{Missing Link}" : process.env.REACT_APP_API_LINK}/api/random`
 
     let random_res =
         `[
@@ -90,7 +90,7 @@ export default function Api() {
 
     let daily_req =
         `curl --request GET \\
-    --url ${process.env.API_LINK === undefined ? "{Missing Link}" : process.env.API_LINK}/api/daily/2023-03-02`
+    --url ${process.env.REACT_APP_API_LINK === undefined ? "{Missing Link}" : process.env.REACT_APP_API_LINK}/api/daily/2023-03-02`
 
     let daily_res =
         `[
@@ -128,7 +128,7 @@ export default function Api() {
 
     let submit_req =
         `curl --request POST \\
-    --url ${process.env.API_LINK === undefined ? "{Missing Link}" : process.env.API_LINK}/api/submit \\
+    --url ${process.env.REACT_APP_API_LINK === undefined ? "{Missing Link}" : process.env.REACT_APP_API_LINK}/api/submit \\
     --header 'Content-Type: application/json' \\
     --data '{"puzzle": [
             [0,0,0,0,0,0,0,0,0],

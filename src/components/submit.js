@@ -39,7 +39,7 @@ export default function SubmitBoard() {
             difficulty: form.difficulty
         }
 
-        let response = await fetch("http://localhost:8000/api/submit", {
+        let response = await fetch(`${process.env.REACT_APP_API_LINK}/api/submit`, {
             method: "POST",
             body: JSON.stringify(submission),
             headers: {
