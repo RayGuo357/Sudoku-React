@@ -69,13 +69,13 @@ BOARD
     cursor: pointer;
 }
 
-.number-container > div {
+.number-container>div {
     margin: 5px;
     background-color: #80808080;
     border-radius: 1em;
 }
 
-.number-container > div:hover {
+.number-container>div:hover {
     margin: 4px;
     background-color: white;
     border: 1px solid #80808080;
@@ -168,7 +168,7 @@ COMPLETION
     color: white;
 }
 
-#button-container > input {
+#button-container>input {
     color: white;
     background-color: transparent;
     text-decoration: none;
@@ -179,7 +179,7 @@ COMPLETION
     border-radius: 1em;
 }
 
-#button-container > input:hover {
+#button-container>input:hover {
     color: black;
     background-color: white;
     border: none;
@@ -319,4 +319,23 @@ API & ABOUT
 
 hr {
     margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+thead {
+    background-color: #dddddd;
 }
