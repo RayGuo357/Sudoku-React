@@ -155,10 +155,11 @@ export default function Api() {
 
             <h1>API</h1>
 
+            <hr />
+
             <section>
                 <h2><span>GET</span> /all </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
-                    exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
+                <p>Responds with all the boards in the database.</p>
 
                 <table>
                     <thead>
@@ -170,11 +171,11 @@ export default function Api() {
                     <tbody>
                         <tr>
                             <td>200 OK</td>
-                            <td>Desc here</td>
+                            <td>Successfully received and responds</td>
                         </tr>
                         <tr>
                             <td>500 Server Error</td>
-                            <td>Desc here</td>
+                            <td>An error occurred with the server</td>
                         </tr>
                     </tbody>
                 </table>
@@ -192,8 +193,7 @@ export default function Api() {
 
             <section>
                 <h2><span>GET</span> /random </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
-                    exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
+                <p>Responds with a random board in the database.</p>
 
                 <table>
                     <thead>
@@ -205,11 +205,11 @@ export default function Api() {
                     <tbody>
                         <tr>
                             <td>200 OK</td>
-                            <td>Desc here</td>
+                            <td>Successfully received and responds</td>
                         </tr>
                         <tr>
                             <td>500 Server Error</td>
-                            <td>Desc here</td>
+                            <td>An error occurred with the server</td>
                         </tr>
                     </tbody>
                 </table>
@@ -227,9 +227,8 @@ export default function Api() {
 
             <section>
                 <h2><span>GET</span> /daily/&#123;date&#125; </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
-                    exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
-                <p>YYYY-MM-DD</p>
+                <p>Grabs the daily board from a specific date in the format of YYYY-MM-DD.</p>
+                <p>If no date is specified, it defaults to the current daily board.</p>
 
                 <table>
                     <thead>
@@ -241,15 +240,15 @@ export default function Api() {
                     <tbody>
                         <tr>
                             <td>200 OK</td>
-                            <td>Desc here</td>
+                            <td>Successfully received and responds</td>
                         </tr>
                         <tr>
                             <td>400 Bad Request</td>
-                            <td>Desc here</td>
+                            <td>Invalid date format</td>
                         </tr>
                         <tr>
                             <td>500 Server Error</td>
-                            <td>Desc here</td>
+                            <td>An error occurred with the server</td>
                         </tr>
                     </tbody>
                 </table>
@@ -267,8 +266,7 @@ export default function Api() {
 
             <section>
                 <h2><span>POST</span> /submit </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
-                    exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
+                <p>The endpoint to submit a board which requires the incomplete puzzle, an author, and a difficulty rating.</p>
 
 
                 <table>
@@ -281,15 +279,15 @@ export default function Api() {
                     <tbody>
                         <tr>
                             <td>200 OK</td>
-                            <td>Desc here</td>
+                            <td>Successfully received and responds</td>
                         </tr>
                         <tr>
                             <td>400 Bad Request</td>
-                            <td>Desc here</td>
+                            <td>Board may be unsolvable or already exists in the database</td>
                         </tr>
                         <tr>
                             <td>500 Server Error</td>
-                            <td>Desc here</td>
+                            <td>An error occurred with the server</td>
                         </tr>
                     </tbody>
                 </table>
