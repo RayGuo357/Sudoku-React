@@ -25,6 +25,7 @@ BOARD
 }
 
 .board-cell {
+    font-size: 3vh;
     display: flex;
     width: auto;
     border-style: solid;
