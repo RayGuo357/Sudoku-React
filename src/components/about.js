@@ -4,7 +4,7 @@ export default function About() {
 
     return (
         <div className="container">
-            About
+            About page has not been created.
         </div>
     )
 }
