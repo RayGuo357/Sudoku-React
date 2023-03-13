@@ -255,13 +255,17 @@ export default function Board(props) {
                         <div key={i} onClick={handleNumberClick}>{i + 1}</div>
                     ))}
                 </div>
-                <input type='button' onClick={test}></input> {/* TODO: Remove */ }
-                <input type='button' onClick={solve}></input> {/* TODO: Remove */ }
-                <input id="completion-check" type='checkbox'></input> {/* TODO: Hide */ }
+                {process.env.NODE_ENV === 'development' &&
+                    <div>
+                        <input type='button' onClick={test}></input>
+                        <input type='button' onClick={solve}></input>
+                    </div>
+                }
+                <input id="completion-check" type='checkbox' style={{display: process.env.NODE_ENV === 'development' ? 'inline-block' : 'none'}}></input>
                 <div className="board-info">
-                    Author: {board.author === "Anonymous" ? <i>{board.author}</i> : <b>{board.author}</b>} <br/>
-                    Difficulty: { {1: "Easy", 2: "Medium", 3: "Hard", 4: "Extreme"}[board.difficulty] } <br/>
-                    Date Submitted: {board.dateSubmitted.split(" ")[0]} <br/>
+                    Author: {board.author === "Anonymous" ? <i>{board.author}</i> : <b>{board.author}</b>} <br />
+                    Difficulty: {{ 1: "Easy", 2: "Medium", 3: "Hard", 4: "Extreme" }[board.difficulty]} <br />
+                    Date Submitted: {board.dateSubmitted.split(" ")[0]} <br />
                 </div>
                 <CompletionPopUp type={type} generateNewRandomBoard={generateNewRandomBoard} />
             </div>
