@@ -155,151 +155,155 @@ export default function Api() {
 
             <h1>API</h1>
 
-            <h2><span>GET</span> /all </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
-                exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
+            <section>
+                <h2><span>GET</span> /all </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
+                    exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Status Code</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>200 OK</td>
-                        <td>Desc here</td>
-                    </tr>
-                    <tr>
-                        <td>500 Server Error</td>
-                        <td>Desc here</td>
-                    </tr>
-                </tbody>
-            </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status Code</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>200 OK</td>
+                            <td>Desc here</td>
+                        </tr>
+                        <tr>
+                            <td>500 Server Error</td>
+                            <td>Desc here</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <h3>Example Request</h3>
+                <h3>Example Request</h3>
 
-            <pre><code className="language-bash">{all_req}</code></pre>
+                <pre><code className="language-bash">{all_req}</code></pre>
 
-            <h3>Example Response</h3>
+                <h3>Example Response</h3>
 
-            <pre><code className="language-json">{all_res}</code></pre>
+                <pre><code className="language-json">{all_res}</code></pre>
 
-            <hr />
+                <hr />
+            </section>
+
+            <section>
+                <h2><span>GET</span> /random </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
+                    exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status Code</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>200 OK</td>
+                            <td>Desc here</td>
+                        </tr>
+                        <tr>
+                            <td>500 Server Error</td>
+                            <td>Desc here</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Example Request</h3>
+
+                <pre><code className="language-bash">{random_req}</code></pre>
+
+                <h3>Example Response</h3>
+
+                <pre><code className="language-json">{random_res}</code></pre>
+
+                <hr />
+            </section>
+
+            <section>
+                <h2><span>GET</span> /daily/&#123;date&#125; </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
+                    exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
+                <p>YYYY-MM-DD</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status Code</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>200 OK</td>
+                            <td>Desc here</td>
+                        </tr>
+                        <tr>
+                            <td>400 Bad Request</td>
+                            <td>Desc here</td>
+                        </tr>
+                        <tr>
+                            <td>500 Server Error</td>
+                            <td>Desc here</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Example Request</h3>
+
+                <pre><code className="language-bash">{daily_req}</code></pre>
+
+                <h3>Example Response</h3>
+
+                <pre><code className="language-json">{daily_res}</code></pre>
+
+                <hr />
+            </section>
+
+            <section>
+                <h2><span>POST</span> /submit </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
+                    exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
 
 
-            <h2><span>GET</span> /random </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
-                exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Status Code</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>200 OK</td>
+                            <td>Desc here</td>
+                        </tr>
+                        <tr>
+                            <td>400 Bad Request</td>
+                            <td>Desc here</td>
+                        </tr>
+                        <tr>
+                            <td>500 Server Error</td>
+                            <td>Desc here</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Status Code</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>200 OK</td>
-                        <td>Desc here</td>
-                    </tr>
-                    <tr>
-                        <td>500 Server Error</td>
-                        <td>Desc here</td>
-                    </tr>
-                </tbody>
-            </table>
+                <h3>Example Request</h3>
 
-            <h3>Example Request</h3>
+                <pre><code className="language-bash">{submit_req}</code></pre>
 
-            <pre><code className="language-bash">{random_req}</code></pre>
+                <h3>Example Response</h3>
 
-            <h3>Example Response</h3>
+                <pre><code className="language-json">{submit_res}</code></pre>
 
-            <pre><code className="language-json">{random_res}</code></pre>
-
-            <hr />
-
-
-            <h2><span>GET</span> /daily/&#123;date&#125; </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
-                exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
-            <p>YYYY-MM-DD</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Status Code</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>200 OK</td>
-                        <td>Desc here</td>
-                    </tr>
-                    <tr>
-                        <td>400 Bad Request</td>
-                        <td>Desc here</td>
-                    </tr>
-                    <tr>
-                        <td>500 Server Error</td>
-                        <td>Desc here</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>Example Request</h3>
-
-            <pre><code className="language-bash">{daily_req}</code></pre>
-
-            <h3>Example Response</h3>
-
-            <pre><code className="language-json">{daily_res}</code></pre>
-
-            <hr />
-
-
-            <h2><span>POST</span> /submit </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reprehenderit doloremque
-                exercitationem consequuntur laudantium ullam vero tempora, a aperiam harum?</p>
-
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Status Code</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>200 OK</td>
-                        <td>Desc here</td>
-                    </tr>
-                    <tr>
-                        <td>400 Bad Request</td>
-                        <td>Desc here</td>
-                    </tr>
-                    <tr>
-                        <td>500 Server Error</td>
-                        <td>Desc here</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>Example Request</h3>
-
-            <pre><code className="language-bash">{submit_req}</code></pre>
-
-            <h3>Example Response</h3>
-
-            <pre><code className="language-json">{submit_res}</code></pre>
-
-            <hr />
-
+                <hr />
+            </section>
 
         </div>
     )
